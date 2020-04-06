@@ -1,2 +1,2 @@
 # Java-Exmples
-Ejemplos sencillos de java
+Ejemplos sencillos de programación estructurada de java
