@@ -3,14 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package SegundoParcial;
+package direccionesip;
 
 /**
  *
  * @author Kevin Ortega
  */
 public class BinarioToDecimal {
-     char comparar;
+     int numero,contador=0, tope=10;
+
     
     public int BinariToDecimal(String arreglo){
 
@@ -18,10 +19,9 @@ public class BinarioToDecimal {
          char[] arreglo1=arreglo.toCharArray();
 
         //Con las siguientes calculamos el numero decimal
-        for(int b=7;b<=arreglo1.length;b--){
-       
+        for(int b=7;b<arreglo1.length;b++){
             if(arreglo1[b]=='1'){
-                decimal+=(int)(Math.pow(2,b));
+                decimal= (int) (decimal+(Math.pow(2,b)));
                         }
                   }
             return decimal;
